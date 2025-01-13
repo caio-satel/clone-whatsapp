@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone - Exercicio</title>
+    <meta name="description" content="WhatsApp Clone - Exercicio Udemy">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/color.css">
+    <script src="https://kit.fontawesome.com/7645407d9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="aside-container">
+            <div class="navbar-container-profile">
+                <img class="img-profile" src="/img/avatar1.png" alt="Imagem de perfil" width="40" height="40">
+                <div class="toolbar-profile">
+                    <i class="fa-solid fa-spinner cor-3"></i>   
+                    <i class="fa-solid fa-message cor-3"></i>   
+                    <i class="fa-solid fa-ellipsis-vertical cor-3"></i> 
+                </div>
+            </div>
+            <div class="notification-container">
+                <i class="fa-solid fa-bell-slash cor-4"></i>
+                <p class="recive-notification cor-5">Receba notificações de novas mensagens</p>
+                <p class="active-notification cor-5">Ativar notificações na área de trabalho <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass cor-3"></i>
+                <input class="cor-13" id="search-aside" type="text" name="contact" placeholder="Procurar ou começar uma nova conversa">
+            </div>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <img class="img-contact" src="/img/avatar2.png" alt="Imagem de perfil" width="50" height="50">
+                    <div class="contact-info">
+                        <p class="contact-name cor-12">Sabrina Matos</p>
+                        <p class="contact-message cor-3"><i class="fa-solid fa-check-double cor-14"></i> Oi, tudo bem?</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time cor-3">22:40</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img class="img-contact" src="/img/avatar3.png" alt="Imagem de perfil" width="50" height="50">
+                    <div class="contact-info">
+                        <p class="contact-name cor-12">João Augusto</p>
+                        <p class="contact-message cor-3">Esta disponível para um freela?</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time cor-3">12:30</p>
+                        <p class="message-number">3</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img class="img-contact" src="/img/avatar4.png" alt="Imagem de perfil" width="50" height="50">
+                    <div class="contact-info">
+                        <p class="contact-name cor-12">Maria Silva</p>
+                        <p class="contact-message cor-3">O projeto ficou perfeito, obrigada!</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time cor-3">08:20</p>
+                        <p class="message-number">5</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="chat-container">
+            <div class="chat-nav-container">
+                <div class="contactchat-info">
+                    <img class="img-profile" src="/img/avatar2.png" alt="Imagem de perfil" width="40" height="40">
+                    <p class="contact-name">Aléxia Couto</p>
+                </div>
+                <ul class="toolbar-chat">
+                    <li><i class="fa-solid fa-magnifying-glass cor-3"></i></li>
+                    <li><i class="fa-solid fa-paperclip cor-3"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical cor-3"></i></li>
+                </ul>
+            </div>
+            <div class="message-container">
+                <div class="bg-image"></div>
+                <div class="box-message-chat">
+                    <p class="message-chat guest">Olá, bom dia!</p>
+                    <p class="message-chat user">Oi, tudo bem?</p>
+                </div>
+                <div class="sendmessage-box">
+                    <i class="fa-solid fa-face-laugh"></i>
+                    <input type="text" name="message" placeholder="Digite uma mensagem">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

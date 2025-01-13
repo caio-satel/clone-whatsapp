@@ -1,0 +1,355 @@
+/* icons project:
+
+<i class="fa-solid fa-message"></i> ~ message
+<i class="fa-solid fa-magnifying-glass"></i> ~ search
+<i class="fa-solid fa-spinner"></i> ~ carregamento/spinner - stories wpp
+<i class="fa-solid fa-microphone"></i> ~ microfone
+<i class="fa-solid fa-face-laugh"></i> ~ emote face 
+<i class="fa-solid fa-paperclip"></i> ~ clips
+<i class="fa-solid fa-ellipsis-vertical"></i> ~ three points - options 
+<i class="fa-solid fa-check-double"></i> ~ double check notification 
+<i class="fa-solid fa-bell-slash"></i> ~ notification alert 
+<i class="fa-solid fa-angle-right"></i> ~ angle right */
+
+@import '../css/color.css';
+
+/* global */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* principal container */
+.container {
+	height: 100vh;
+	position: relative;
+}
+
+/* aside container principal */
+.aside-container {
+    width: 410px;
+    height: 100%;
+    display: inline-block;
+	position: relative;
+}
+
+/* navbar profile */
+.navbar-container-profile {
+    width: 100%;
+    height: 60px;
+    background-color: var(--cor-15);
+}
+
+.img-profile {
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: var(--cor-3);
+}
+
+/* toolbar profile */
+.toolbar-profile {
+    float: right;
+    list-style: none;
+    line-height: 60px;
+    height: 60px;
+    padding-right: 20px;
+}
+
+.toolbar-profile i {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* notification container */
+.notification-container {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    padding-top: 23px;
+    padding-left: 80px;
+    background-color: var(--cor-4);
+}
+
+.fa-bell-slash {
+    font-size: 20px;
+    text-align: center;
+	line-height: 45px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background-color: var(--cor-0);
+}
+
+.notification-container .recive-notification {
+    font-size: .935rem;
+	margin-bottom: 3px;
+}
+.notification-container .active-notification {
+    font-size: .815rem;
+}
+
+/* search container */
+.search-container {
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    background-color: var(--cor-7);
+    position: relative;
+}
+
+.search-container .fa-magnifying-glass {
+    font-size: 14px;
+    position: absolute;
+    left: 40px;
+    top: 19px;
+}
+
+#search-aside {
+    width: 95%;
+    height: 35px;
+    display: block;
+    margin-left: 10px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 17.5px;
+    border: 1px solid #00000026;
+}
+
+#search-aside:focus {
+    outline-color: #00000022;
+}
+
+/* contact container */
+.contact-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-0);
+    cursor: pointer;
+}
+
+.contact-box {
+    width: 100%;
+    height: 72px;
+    position: relative;
+    border-top: 1px solid #00000022;
+    transition: .5;
+}
+
+.contact-box:last-child {
+    border-bottom: 1px solid #00000022;
+}
+
+.contact-box:first-child {
+    background-color: var(--cor-11);
+}
+
+.contact-box:not(:first-child):hover {
+    background-color: var(--cor-11);
+}
+
+.img-contact {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    border-radius: 50%;
+    background-color: var(--cor-3);
+}
+
+.contact-info {
+    margin-left: 80px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.contact-info .contact-name {
+    font-size: 1rem;
+}
+
+.contact-message {
+    font-size: .875rem;
+}
+
+.message-info {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    display: inline-block;
+}
+
+.message-time {
+    opacity: 0.5;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.message-number {
+    background-color: var(--cor-20);
+    color: var(--cor-0);
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+}
+
+/* main content */
+.chat-container {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: calc(100% - 410px);
+    height: 100%;
+    background-color: #CCC;
+}
+
+.chat-nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--cor-15);
+    border-left: 1px solid #00000022;
+}
+
+.contactchat-info .contact-name {
+    height: 100%;
+    line-height: 60px;
+    padding-left: 80px;
+}
+
+.toolbar-chat {
+    list-style: none;
+    line-height: 60px;
+    margin-right: 22px;
+}
+
+.toolbar-chat li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.toolbar-chat li i {
+    cursor: pointer;
+}
+
+/* send-message box */
+.message-container {
+    background-color: #E1DAD2;
+    height: calc(100% - 120px);
+    position: relative;
+}
+
+.bg-image {
+    background-image: url("/img/background_whats.png");
+    background-repeat: repeat;
+    opacity: .06;
+    width: 100%;
+    height: 100%;
+}
+
+.box-message-chat {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px 80px;
+    box-sizing: border-box;
+}
+
+.box-message-chat p {
+    display: block;
+    color: #262626;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+    width: 200px;
+}
+
+.guest {
+    background-color: var(--cor-0);
+}
+
+.user {
+    float: right;
+    background-color: var(--cor-19);
+}
+
+.guest:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-right: 17px solid #FFF;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.user:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #DCF8C6;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+.sendmessage-box {
+	background-color: #EFEFEF;
+	border-left: 1px solid #DDD;
+	height: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+}
+
+.sendmessage-box input {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	background-color: #FFF;
+	border: 1px solid #00000026;
+	height: 40px;
+	border-radius: 20px;
+	padding-left: 20px;
+	font-size: 16px;
+	width: 1200px;
+}
+
+.sendmessage-box input:focus {
+    outline-color: #00000022;
+}
+
+.sendmessage-box i {
+	font-size: 24px;
+	color: #80868A;
+	cursor: pointer;
+	height: 60px;
+	line-height: 60px;
+}
+
+.fa-microphone {
+	float: right;
+}
