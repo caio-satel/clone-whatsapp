@@ -11,7 +11,7 @@
 <i class="fa-solid fa-bell-slash"></i> ~ notification alert 
 <i class="fa-solid fa-angle-right"></i> ~ angle right */
 
-@import '../css/color.css';
+@import url('../css/color.css');
 
 /* global */
 * {
